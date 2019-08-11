@@ -20,7 +20,10 @@ $ npm run build
 
 ## Usage
 
-I import useForm and make available updateValue, submitHandler, error as useForm.
+I import useForm and make available data (updateValue, submitHandler, error) as useForm.
+updateValue => value from input onChange
+submitHandler => form handler
+error => form errors
 
 ```bash
 # src/components/Form/index.js
