@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Input = ({ type, name, change, placeholder }) => (
   <label>
     <input
