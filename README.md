@@ -21,19 +21,19 @@ $ npm run build
 ## Explication
 
 <p>useForm has two hooks, values and form errors.</p>
+
 ```bash
 # src/components/Form/useForm.js
 
 const useForm = initial => {
-const [values, setValues] = useState(initial);
-const [error, setError] = useState(null);
-};
-
-````
+    const [values, setValues] = useState(initial);
+    const [error, setError] = useState(null);
+}
+```
 
 <p>The updateValue function adds further elements to the value object.</p>
-```bash
 
+```bash
 const updateValue = e => {
     setValues({ ...values, [e.target.name]: e.target.value });
 };
@@ -43,6 +43,7 @@ const updateValue = e => {
 ```
 
 <p>validate function validating data and return errors or null</p>
+
 ```bash
 const validate = values => {
     if (!values.name) return "Enter your name";
@@ -54,6 +55,7 @@ const validate = values => {
 ```
 
 <p>submitHandler is a function that sets the state of the error hook or sends a form.</p>
+
 ```bash
 const submitHandler = async e => {
     e.preventDefault();
@@ -68,7 +70,8 @@ const submitHandler = async e => {
 };
 ```
 
-<p>we need to return values in order to be able to use them in the form</p>
+<p>We need to return values in order to be able to use them in the form</p>
+
 ```bash
 return [updateValue, submitHandler, error];
 ```
@@ -82,4 +85,4 @@ return [updateValue, submitHandler, error];
 # src/components/Form/index.js
 
 const [updateValue, submitHandler, error] = useForm({});
-````
+```
