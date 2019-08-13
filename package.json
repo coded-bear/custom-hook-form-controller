@@ -1,5 +1,6 @@
 {
   "name": "custom-hook-form-controller",
+  "author": "Łukasz Warchoł",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
