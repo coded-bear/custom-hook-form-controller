@@ -95,10 +95,10 @@ const useForm = initial => {
 
         if (validate(values)) setError(validate(values));
         else {
-        setError(null);
+            setError(null);
 
-        # here you can send your "values"
-        console.log(values);
+            # here you can send your "values"
+            console.log(values);
         }
     };
 }
