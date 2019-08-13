@@ -46,7 +46,7 @@ const useForm = initial => {
 }
 ```
 
-<p>validate function validating data and return errors or null</p>
+<p>Create a "validate" function that validates the data and returns errors or null.</p>
 
 ```bash
 # src/containers/App/useForm.js
@@ -69,7 +69,7 @@ const useForm = initial => {
 }
 ```
 
-<p>submitHandler is a function that sets the state of the error hook or sends a form.</p>
+<p>Create submitHandler, which is a function that sets the state of the error hook or sends a form</p>
 
 ```bash
 # src/containers/App/useForm.js
@@ -151,3 +151,5 @@ const useForm = initial => {
 
 const [updateValue, submitHandler, error] = useForm({});
 ```
+
+<p>Using custom hooks allows us to write a nicer form handling, and you can easily move it to a separate file.</p>
